@@ -1,0 +1,107 @@
+<div class="footer">
+  <ul>
+    <li>
+      <a href="http://localhost:4200/seller-auth">Become a Seller</a>
+    </li>
+
+    <li>
+      <a href="https://www.facebook.com/">Facebook</a>
+    </li>
+
+    <li>
+      <a href="https://www.youtube.com/">Youtube</a>
+    </li>
+
+    <li>
+      <a href="#" (click)="openPolicesModal()">Polices</a>
+    </li>
+    <div class="modal" [ngClass]="{ 'show': policesModalOpen }">
+      <div class="modal-content">
+        <span (click)="closePolicesModal()" class="close">&times;</span>
+        <h4>Polices</h4>
+        <pre>
+          These polices are governed
+          and construed in accordance 
+          with the laws of Bharat Book
+        </pre>
+      </div>
+    </div>
+
+    <li>
+      <a href="#" (click)="openTermModal()">Terms and Conditions</a>
+    </li>
+    <div class="modal" [ngClass]="{ 'show': termModalOpen }">
+      <div class="modal-content">
+        <span (click)="closeTermModal()" class="close">&times;</span>
+        <h4>Terms and Conditions</h4>
+        <pre>
+          By accessing or using [Your Book Website], 
+          you agree to be bound by these terms and 
+          conditions.If you do not agree to these 
+          terms, please do not use our services. 
+          All content on this website, including text, 
+          images, and any other materials, is for 
+          informational and educational purposes only.
+          You may not reproduce, distribute, or use our 
+          content for commercial purposes without our 
+          written consent.
+        </pre>
+      </div>
+    </div>
+
+    <li>
+      <a href="#" (click)="openContactModal()">Contact</a>
+    </li>
+    <div class="modal" [ngClass]="{ 'show': helpModalOpen }">
+      <div class="modal-content">
+        <span (click)="closeContactModal()" class="close">&times;</span>
+        <h4>Contact</h4>
+        <pre>
+          Unit 102, Richmond Rpad, HSR Layour,
+          Delhi, Delhi - 121732 (India)
+          Ph:918476396742
+        </pre>
+      </div>
+    </div>
+
+    <li>
+      <a href="#" (click)="openFaqModal()">FAQ</a>
+    </li>
+    <div class="modal" [ngClass]="{ 'show': faqModalOpen }">
+      <div class="modal-content">
+        <span (click)="closeFaqModal()" class="close">&times;</span>
+        <h4>FAQ</h4>
+        <pre>
+        1) What do you want to know if you buy a books? 
+           Can you return them! 
+        2) I bought book from you and it’s damaged, 
+           do I have to pay to return it to you?
+        3) I ordered horror book and I got a comic book, 
+           what do I do now?    
+        </pre>
+      </div>
+    </div>
+
+    <li>
+      <a href="#" (click)="openLocationModal()">Location</a>
+    </li>
+    <div class="modal" [ngClass]="{ 'show': locationModalOpen }">
+      <div class="modal-content">
+        <span (click)="closeLocationModal()" class="close">&times;</span>
+        <h4>Location</h4>
+        <p>{{location}}</p>
+
+        <!--Location Map-->
+        <google-map height="400px" width="565px" [center]="center" [zoom]="zoom" (mapClick)="addMarker($event)">
+          <map-marker #marker="mapMarker" *ngFor="let markerPosition of markerPositions" [position]="markerPosition"
+            (mapClick)="openInfoWindow(marker)"></map-marker>
+          <map-info-window>Bharat Books</map-info-window>
+        </google-map>
+
+      </div>
+    </div>
+
+  </ul>
+  <p class="copy">© 2023 Bharat Books</p>
+
+</div>

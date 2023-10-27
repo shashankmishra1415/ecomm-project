@@ -1,0 +1,100 @@
+{
+  "seller": [
+    {
+      "name": "Naik",
+      "email": "naik@gmail.com",
+      "password": "naik123",
+      "id": 3
+    },
+    {
+      "name": "Rajesh",
+      "email": "rajesh@gmail.com",
+      "password": "rajesh123",
+      "id": 5
+    },
+    {
+      "name": "Kumar",
+      "email": "kumar@gmail.com",
+      "password": "kumar123",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "name": "Darkhill School",
+      "price": "399",
+      "category": "Mystery",
+      "author": "CJ Loughty",
+      "description": "A mystery book",
+      "image": "https://m.media-amazon.com/images/I/41AiWNjwV-S.jpg",
+      "id": 2
+    },
+    {
+      "name": "Night Of Terror",
+      "price": "150",
+      "category": "Horror",
+      "author": "D. Fischer",
+      "description": "Night of terror based on true story",
+      "image": "https://m.media-amazon.com/images/I/51IzeRM6KkL.jpg",
+      "id": 3
+    },
+    {
+      "name": "Huckleberry",
+      "price": "350",
+      "category": "Classic",
+      "author": "Mark Twain",
+      "description": "The adventure of Huckleberry finn",
+      "image": "https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_960,f_auto/9780141321097_HUCKFINN_CMYK_struzl.jpg",
+      "id": 6
+    },
+    {
+      "name": "Empire Of Lies",
+      "price": "353",
+      "category": "Action",
+      "author": "Raymond Khoury",
+      "description": "Action book",
+      "image": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_padded,f_auto,q_auto,dpr_1/v1599443818/pro_pbid_4287670.jpg",
+      "id": 5
+    },
+    {
+      "name": "Science",
+      "price": "149",
+      "category": "Science",
+      "author": "Sahitya Bhawan",
+      "description": "A science book",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmiZVlGmxtjrVIKsmYQCXh61RxT7JqgjhYg&usqp=CAU",
+      "id": 4
+    },
+    {
+      "name": "The Movie",
+      "price": "79",
+      "category": "Comic",
+      "author": "Mark Himill",
+      "description": "Written by Mark Himill",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTMwODQ5MDcxMl5BMl5BanBnXkFtZTcwMDI1ODQ4NA@@._V1_.jpg",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "Pandey",
+      "email": "pandey@gmail.com",
+      "password": "pandey123",
+      "id": 1
+    },
+    {
+      "name": "Peter",
+      "email": "peter@gmail.com",
+      "password": "peter123",
+      "id": 2
+    },
+    {
+      "name": "Harry",
+      "email": "harry@gmail.com",
+      "password": "harry123",
+      "id": 3
+    }
+  ],
+  "cart": [],
+  "orders": []
+}

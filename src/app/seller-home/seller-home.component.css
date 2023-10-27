@@ -1,0 +1,23 @@
+table{
+    text-align: left;
+    color:skyblue;
+    border-collapse: collapse;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+table td, table th{
+    border: 1px solid skyblue;
+    padding: 10px;
+    min-width: 160pxs;
+}
+.adjust-update-link{
+    margin-left: 16px;
+    color: green;
+}
+.delete-icon{
+    color: red;
+    margin-left: 2px;
+    cursor: pointer;
+}
